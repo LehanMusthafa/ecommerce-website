@@ -14,7 +14,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="bg-transparent absolute top-0 inset-x-0">
+    <header className="bg-transparent absolute top-0 inset-x-0 z-50">
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="hidden lg:flex lg:flex-1 lg:gap-x-10">
           <a href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
