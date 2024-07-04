@@ -21,19 +21,19 @@ export default function Navbar() {
     <header className={`bg-transparent ${isHomePage ? "absolute top-0 inset-x-0 z-50" : "relative"}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="hidden lg:flex lg:flex-1 lg:gap-x-10">
-          <Link href="/" className="text-sm font-normal tracking-tighter leading-6 text-black">
+          <Link href="/" className="text-sm font-normal leading-6 text-black">
             Home
           </Link>
-          <Link href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
+          <Link href="#" className="text-sm font-normal leading-6 text-black">
             Product
           </Link>
-          <Link href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
+          <Link href="#" className="text-sm font-normal leading-6 text-black">
             Store
           </Link>
         </div>
         <div className="flex lg:flex-1 justify-center">
           <Link href="/" className="-m-1.5 p-1.5">
-            <span className="font-semibold tracking-tight text-lg">DREAMBLISS</span>
+            <span className="font-semibold text-lg">DREAMBLISS</span>
           </Link>
         </div>
         <div className="flex lg:hidden">
@@ -47,13 +47,13 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-10">
-            <Link href="/" className="text-sm font-normal tracking-tighter leading-6 text-black">
+            <Link href="/" className="text-sm font-normal leading-6 text-black">
                 Search
             </Link>
-            <Link href="/" className="text-sm font-normal tracking-tight leading-6 text-black">
-                Cart (0)
+            <Link href="/" className="text-sm font-normal leading-6 text-black">
+                Bag (0)
             </Link>
-            <Link href="/" className="text-sm font-normal tracking-tight leading-6 text-black">
+            <Link href="/" className="text-sm font-normal leading-6 text-black">
                 Login
             </Link>
         </div>
@@ -79,19 +79,19 @@ export default function Navbar() {
               <div className="space-y-1 py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal tracking-tight leading-7 text-black"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-black"
                 >
                   Features
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal tracking-tight leading-7 text-black"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-black"
                 >
                   Marketplace
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal tracking-tight leading-7 text-black"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-black"
                 >
                   Company
                 </a>
@@ -99,19 +99,19 @@ export default function Navbar() {
               <div className="py-6">
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal tracking-tight leading-7 text-black"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-black"
                 >
                   Search
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal tracking-tight leading-7 text-black"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-black"
                 >
-                  Cart (0)
+                  Bag (0)
                 </a>
                 <a
                   href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal tracking-tight leading-7 text-black"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-base font-normal leading-7 text-black"
                 >
                   Login
                 </a>

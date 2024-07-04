@@ -5,17 +5,17 @@ export default function Footer() {
         <div className="md:grid md:grid-cols-12">
           <div className="mb-6 md:mb-0 col-span-7">
             <div className="flex items-center">
-              <span className="text-5xl font-medium tracking-tighter leading-[4rem] text-slate-300">
+              <span className="text-5xl font-medium tracking-tight leading-[4rem] text-slate-300">
                 Treat Your <br/> Skin with Love
               </span>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2 col-start-8 col-span-full">
             <div>
-              <h2 className="mb-3 text-base font-normal text-slate-400 tracking-tight">
+              <h2 className="mb-3 text-base font-normal text-slate-400">
                 Discover
               </h2>
-              <ul className="text-black font-[450] tracking-tighter text-base flex flex-col gap-y-3">
+              <ul className="text-black font-[450] text-base flex flex-col gap-y-3">
                 <li>
                   <a href="" className="">
                     Home
@@ -34,10 +34,10 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h2 className="mb-3 text-base font-normal text-slate-400 tracking-tight">
+              <h2 className="mb-3 text-base font-normal text-slate-400">
                 About Us
               </h2>
-              <ul className="text-black font-[450] tracking-tighter text-base flex flex-col gap-y-3">
+              <ul className="text-black font-[450] text-base flex flex-col gap-y-3">
                 <li>
                   <a href="" className="">
                     Contact

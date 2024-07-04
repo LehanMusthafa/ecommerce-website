@@ -28,7 +28,7 @@ export default function ProductScroller({
                 <Image src={product.image} alt="One of the products" />
               </div>
               <div className="pt-2 bg-white flex-col -space-y-1">
-                <span className="block text-sm tracking-tight font-[450] pb-0.5">
+                <span className="block text-sm font-[450] pb-0.5">
                   {product.name}
                 </span>
               </div>

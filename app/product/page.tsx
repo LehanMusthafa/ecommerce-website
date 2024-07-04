@@ -66,10 +66,10 @@ export default function Product() {
           <div className="w-full">
             <div className="pl-12">
               <div className="flex flex-col">
-                <h1 className="text-4xl font-medium tracking-tighter pb-2">
+                <h1 className="text-4xl font-medium pb-2">
                   Milky Jelly Cleanser
                 </h1>
-                <p className="tracking-tight">Conditioning face wash</p>
+                <p>Conditioning face wash</p>
                 <div className="flex flex-row items-center gap-x-0.5 mt-2">
                   <StarIconFilled className="w-4 h-4" />
                   <StarIconFilled className="w-4 h-4" />
@@ -79,21 +79,21 @@ export default function Product() {
                   <span className="pl-2 text-sm font-[450]">(1530)</span>
                 </div>
                 <div className="mt-8">
-                  <span className="font-medium text-2xl tracking-tighter font-mono block">
+                  <span className="font-medium text-2xl block">
                     $450.00
                   </span>
-                  <button className="mt-4 px-20 py-3 w-max text-center justify-center border transition-all hover:bg-opacity-15 rounded-full text-sm border-primary-dark text-primary-dark tracking-tighter font-[450] bg-primary bg-opacity-10 flex flex-row gap-x-4">
+                  <button className="mt-4 px-20 py-3 w-max text-center justify-center border transition-all hover:bg-opacity-15 rounded-full text-sm border-primary-dark text-primary-dark font-[450] bg-primary bg-opacity-10 flex flex-row gap-x-4">
                     <span>Add to bag</span>
                   </button>
                 </div>
               </div>
 
               <div className="mt-16">
-                <p className="tracking-tight font-medium text-sm">
+                <p className="font-medium text-sm">
                   Dry skin&apos;s best friend—an ultra rich, buttery
                   moisturizer.
                 </p>
-                <p className="pt-2 tracking-tight leading-relaxed font-[450] text-sm pr-6">
+                <p className="pt-2 leading-relaxed font-[450] text-sm pr-6">
                   A luxuriously rich yet fast-absorbing face cream that delivers
                   a surge of long-lasting hydration. The buttery texture and
                   blend of botanical oils and glycerin melt into skin to give
@@ -132,8 +132,8 @@ export default function Product() {
             />
           </div>
           <div className="flex flex-col col-start-5 col-span-6">
-            <h3 className="text-xs tracking-tight uppercase">Ingredients</h3>
-            <h4 className="text-3xl tracking-tight leading-[2.5rem] mt-16">
+            <h3 className="text-xs uppercase">Ingredients</h3>
+            <h4 className="text-3xl leading-[2.5rem] mt-16">
               Rich in ceramides and fatty acids that reinforce skin’s natural
               moisture barrier, lock-in moisture long-term, and improve radiance
               over time.
@@ -161,19 +161,19 @@ export default function Product() {
 
       <section className="mx-8 mt-32 mb-32">
         <div>
-          <h2 className="text-4xl font-[450] tracking-tighter leading-[2.8rem] pb-7">
+          <h2 className="text-4xl font-[450] leading-[2.8rem] pb-7">
             Reviews
           </h2>
           <div className="flex flex-row gap-x-20">
             <div className="flex flex-col justify-start gap-y-1">
-              <h4 className="text-3xl font-[450] tracking-tighter font-mono">
+              <h4 className="text-3xl font-[450]">
                 1530
               </h4>
               <span className="block text-gray-500 text-sm">Total reviews</span>
             </div>
             <div className="flex flex-col justify-start gap-y-1">
               <div className="flex flex-row items-center gap-x-2">
-                <h4 className="text-3xl font-[450] tracking-tighter font-mono">
+                <h4 className="text-3xl font-[450]">
                   4.3
                 </h4>
                 <div className="flex flex-row gap-x-0.5">
@@ -231,7 +231,7 @@ export default function Product() {
 
       <section className="mt-40 mb-32 mx-8">
         <div className="flex flex-row justify-between items-center mb-16">
-          <h3 className="text-4xl font-[450] tracking-tighter leading-[2.8rem]">
+          <h3 className="text-4xl font-[450] tracking-tight leading-[2.8rem]">
             Suggested <br /> Products
           </h3>
         </div>

@@ -15,6 +15,7 @@ import combo2 from "../public/combo2.jpg";
 import combo3 from "../public/combo3.jpg";
 import combo4 from "../public/combo4.jpg";
 import ProductScroller from "./components/ProductScroller";
+import CtaSection from "./components/CtaSection";
 
 export default function Home() {
   const recommendedProducts = [
@@ -72,12 +73,12 @@ export default function Home() {
 
       <section className="my-20 mx-8">
         <div className="flex flex-row justify-between items-center mb-16">
-          <h3 className="text-4xl font-[450] tracking-tighter leading-[2.8rem]">
+          <h3 className="text-4xl font-[450] tracking-tight leading-[2.8rem]">
             Recommended <br /> Products
           </h3>
           <Link
             href="/"
-            className="px-6 py-2.5 text-primary-dark border bg-white rounded-full border-primary tracking-tight font-medium"
+            className="px-6 py-2.5 text-primary-dark border bg-white rounded-full border-primary font-medium"
           >
             See More
           </Link>
@@ -89,13 +90,13 @@ export default function Home() {
       <section className="mt-32 mb-24 mx-8">
         <div className="grid grid-cols-2">
           <div>
-            <h3 className="text-4xl font-[450] tracking-tighter leading-[2.8rem]">
+            <h3 className="text-4xl font-[450] tracking-tight leading-[2.8rem]">
               Our Product <br /> Dreambliss
             </h3>
           </div>
 
           <div>
-            <p className="text-slate-500 tracking-tight text-lg">
+            <p className="text-slate-500 text-lg">
               Explore an array of exceptional products tailored to fulfill your
               every requirement, offering unmatched quality and innovation to
               enhance your lifestyle.
@@ -105,35 +106,35 @@ export default function Home() {
               <div className="flex flex-col">
                 <Link
                   href="/"
-                  className="border-b border-gray-300 py-6 pl-1.5 font-[550] tracking-tighter text-lg flex flex-row justify-between items-center"
+                  className="border-b border-gray-300 py-6 pl-1.5 font-[550]  text-lg flex flex-row justify-between items-center"
                 >
                   <span>Skincare</span>{" "}
                   <ArrowUpRightIcon className="w-5 h-5 text-gray-500" />
                 </Link>
                 <Link
                   href="/"
-                  className="border-b border-gray-300 py-6 pl-1.5 font-[550] tracking-tighter text-lg flex flex-row justify-between items-center"
+                  className="border-b border-gray-300 py-6 pl-1.5 font-[550]  text-lg flex flex-row justify-between items-center"
                 >
                   <span>Makeup</span>{" "}
                   <ArrowUpRightIcon className="w-5 h-5 text-gray-500" />
                 </Link>
                 <Link
                   href="/"
-                  className="border-b border-gray-300 py-6 pl-1.5 font-[550] tracking-tighter text-lg flex flex-row justify-between items-center"
+                  className="border-b border-gray-300 py-6 pl-1.5 font-[550]  text-lg flex flex-row justify-between items-center"
                 >
                   <span>Body Care</span>{" "}
                   <ArrowUpRightIcon className="w-5 h-5 text-gray-500" />
                 </Link>
                 <Link
                   href="/"
-                  className="border-b border-gray-300 py-6 pl-1.5 font-[550] tracking-tighter text-lg flex flex-row justify-between items-center"
+                  className="border-b border-gray-300 py-6 pl-1.5 font-[550]  text-lg flex flex-row justify-between items-center"
                 >
                   <span>Fragrance</span>{" "}
                   <ArrowUpRightIcon className="w-5 h-5 text-gray-500" />
                 </Link>
                 <Link
                   href="/"
-                  className="py-6 pl-1.5 font-[550] tracking-tighter text-lg flex flex-row justify-between items-center"
+                  className="py-6 pl-1.5 font-[550] text-lg flex flex-row justify-between items-center"
                 >
                   <span>Bundle Package</span>{" "}
                   <ArrowUpRightIcon className="w-5 h-5 text-gray-500" />
@@ -146,12 +147,12 @@ export default function Home() {
 
       <section className="mt-40 mb-32 mx-8">
         <div className="flex flex-row justify-between items-center mb-16">
-          <h3 className="text-4xl font-[450] tracking-tighter leading-[2.8rem]">
+          <h3 className="text-4xl font-[450] tracking-tight leading-[2.8rem]">
             Bundle Package <br /> Products
           </h3>
           <Link
             href="/"
-            className="px-6 py-2.5 text-primary-dark border bg-white rounded-full border-primary tracking-tight font-medium"
+            className="px-6 py-2.5 text-primary-dark border bg-white rounded-full border-primary font-medium"
           >
             See More
           </Link>
@@ -164,16 +165,16 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-x-5">
           <div className="flex flex-col col-span-7">
             <div className="flex flex-col items-start mb-16">
-              <h3 className="text-4xl font-[450] tracking-tighter leading-[2.8rem]">
+              <h3 className="text-4xl font-[450] tracking-tight leading-[2.8rem]">
                 Original Formula Moisturizing
               </h3>
-              <p className="text-lg tracking-tight pb-6 pt-2">
+              <p className="text-lg pb-6 pt-2">
                 Castor seed oil - A plant-based oil with fatty acids and unique
                 water-binding properties to help keep lips moisturized
               </p>
               <Link
                 href="/"
-                className="px-6 py-2.5 text-primary-dark border bg-white rounded-full border-primary tracking-tight font-medium"
+                className="px-6 py-2.5 text-primary-dark border bg-white rounded-full border-primary font-medium"
               >
                 See More
               </Link>
@@ -206,23 +207,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-40 mb-24 px-8 relative pt-24">
-        <div className="bg-gradient-to-b from-primary opacity-50 absolute inset-0 -z-10" />
-        <div className="flex flex-col justify-center items-center">
-          <div className="w-1/2 pb-3">
-            <h3 className="text-5xl font-medium tracking-tighter leading-[3.8rem] text-primary-dark text-center">
-              Experince the Difference for Yourself - Try and Buy Our Products
-              Today!
-            </h3>
-          </div>
-          <Link
-            href="/"
-            className="px-6 py-2.5 text-white bg-primary hover:bg-primary-dark transition-all rounded-full border-primary tracking-tight font-medium"
-          >
-            See More
-          </Link>
-        </div>
-      </section>
+      <CtaSection />
     </main>
   );
 }
