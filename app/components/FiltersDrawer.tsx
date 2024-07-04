@@ -11,11 +11,11 @@ export default function FiltersDrawer({
     open: boolean;
     setOpen: Dispatch<SetStateAction<boolean>>;
   }>) {
-//   const [open, setOpen] = useState(true)
 
   return (
-    <Dialog open={open} onClose={setOpen} className="relative z-10">
+    <Dialog open={open} onClose={() => setOpen(false)} className="relative z-10">
       <DialogBackdrop
+      onClick={() => setOpen(false)}
         transition
         className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity duration-500 ease-in-out data-[closed]:opacity-0"
       />
@@ -27,24 +27,45 @@ export default function FiltersDrawer({
               transition
               className="pointer-events-auto relative w-screen max-w-md transform transition duration-500 ease-in-out data-[closed]:translate-x-full sm:duration-700"
             >
-              <TransitionChild>
-                <div className="absolute left-0 top-0 -ml-8 flex pr-2 pt-4 duration-500 ease-in-out data-[closed]:opacity-0 sm:-ml-10 sm:pr-4">
-                  <button
-                    type="button"
-                    onClick={() => setOpen(false)}
-                    className="relative rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
-                  >
-                    <span className="absolute -inset-2.5" />
-                    <span className="sr-only">Close panel</span>
-                    <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-                  </button>
-                </div>
-              </TransitionChild>
               <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
-                <div className="px-4 sm:px-6">
-                  <DialogTitle className="text-base font-semibold leading-6 text-gray-900">Panel title</DialogTitle>
+              <div className="flex items-center justify-between border-b pb-3 px-4 sm:px-6">
+                    <DialogTitle className="text-xs uppercase font-[450] text-black w-full">Filters</DialogTitle>
+                    <div className="ml-3 flex h-7 items-center">
+                      <button
+                        type="button"
+                        onClick={() => setOpen(false)}
+                        className="relative -m-2 p-2 text-black border border-dashed border-transparent hover:border-black"
+                      >
+                        <span className="absolute -inset-0.5" />
+                        <span className="sr-only">Close panel</span>
+                        <XMarkIcon aria-hidden="true" className="h-4 w-4" />
+                      </button>
+                    </div>
+                  </div>
+                <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                    <div>
+                        <span className='text-sm font-normal'>Skin Type</span>
+                        <ul className='flex flex-row flex-wrap gap-3 text-sm pt-2'>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Combination</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Dry</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Normal</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Oily</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Sensitive</button>
+                        </ul>
+                    </div>
+                    <div className='mt-10'>
+                        <span className='text-sm font-normal'>Skin Concern</span>
+                        <ul className='flex flex-row flex-wrap gap-3 text-sm pt-2'>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Acne + Blemishes</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Dryness</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Dullness</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Fine lines</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Irritation + redness</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Pores</button>
+                            <button className='px-3 py-2 bg-zinc-200 italic'>Uneven skin tone + texture</button>
+                        </ul>
+                    </div>
                 </div>
-                <div className="relative mt-6 flex-1 px-4 sm:px-6">{/* Your content */}</div>
               </div>
             </DialogPanel>
           </div>

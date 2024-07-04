@@ -13,6 +13,7 @@ import CtaSection from "../components/CtaSection";
 import BreadCrumbLinks from "../components/BreadCrumbLinks";
 import FiltersDrawer from "../components/FiltersDrawer";
 import FiltersButton from "../components/FiltersButton";
+import SortButton from "../components/SortButton";
 
 export default function Category() {
   const products = [
@@ -81,14 +82,11 @@ export default function Category() {
   ];
   return (
     <>
-      <div className="w-full flex flex-row justify-between bg-zinc-200 py-3 px-8 mb-12 text-sm">
+      <div className="w-full flex flex-row justify-between items-center bg-zinc-200 py-3 px-8 mb-12 text-sm">
         <BreadCrumbLinks links={breadcrumbLinks} />
         <div className="flex flex-row gap-x-6">
             <FiltersButton />
-          <button>
-            <span className="text-gray-600">Sort&nbsp;</span>
-            <span>(Featured)</span>
-          </button>
+          <SortButton />
         </div>
       </div>
       <section className="h-full mx-8">

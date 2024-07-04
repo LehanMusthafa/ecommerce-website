@@ -11,9 +11,11 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import CartDrawer from './CartDrawer'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [cartOpen, setCartOpen] = useState(false)
   const pathname = usePathname()
   const isHomePage = pathname == "/";
 
@@ -50,9 +52,10 @@ export default function Navbar() {
             <Link href="/" className="text-sm font-normal leading-6 text-black">
                 Search
             </Link>
-            <Link href="/" className="text-sm font-normal leading-6 text-black">
+            <button onClick={() => setCartOpen(!cartOpen)} className="text-sm font-normal leading-6 text-black">
                 Bag (0)
-            </Link>
+                <CartDrawer open={cartOpen} setOpen={setCartOpen} />
+            </button>
             <Link href="/" className="text-sm font-normal leading-6 text-black">
                 Login
             </Link>
