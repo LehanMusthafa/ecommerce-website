@@ -11,7 +11,10 @@ const config: Config = {
       colors: {
         primary: "#2f95cd",
         "primary-dark": "#266c91",
-      }
+      },
+      fontFamily: {
+        mono: ['var(--font-mono)'],
+      },
     },
   },
   plugins: [],

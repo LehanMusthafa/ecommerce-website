@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react'
+import { usePathname } from 'next/navigation'
 import {
   Dialog,
   DialogPanel,
@@ -9,28 +10,31 @@ import {
   Bars3Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
+import Link from 'next/link'
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isHomePage = pathname == "/";
 
   return (
-    <header className="bg-transparent absolute top-0 inset-x-0 z-50">
+    <header className={`bg-transparent ${isHomePage ? "absolute top-0 inset-x-0 z-50" : "relative"}`}>
       <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
       <div className="hidden lg:flex lg:flex-1 lg:gap-x-10">
-          <a href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
+          <Link href="/" className="text-sm font-normal tracking-tighter leading-6 text-black">
             Home
-          </a>
-          <a href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
+          </Link>
+          <Link href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
             Product
-          </a>
-          <a href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
+          </Link>
+          <Link href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
             Store
-          </a>
+          </Link>
         </div>
         <div className="flex lg:flex-1 justify-center">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="font-semibold tracking-tight text-lg">DREAMBLISS</span>
-          </a>
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -43,15 +47,15 @@ export default function Navbar() {
           </button>
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-10">
-            <a href="#" className="text-sm font-normal tracking-tighter leading-6 text-black">
+            <Link href="/" className="text-sm font-normal tracking-tighter leading-6 text-black">
                 Search
-            </a>
-            <a href="#" className="text-sm font-normal tracking-tight leading-6 text-black">
+            </Link>
+            <Link href="/" className="text-sm font-normal tracking-tight leading-6 text-black">
                 Cart (0)
-            </a>
-            <a href="#" className="text-sm font-normal tracking-tight leading-6 text-black">
+            </Link>
+            <Link href="/" className="text-sm font-normal tracking-tight leading-6 text-black">
                 Login
-            </a>
+            </Link>
         </div>
       </nav>
       <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
